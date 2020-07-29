@@ -1,0 +1,209 @@
+<정렬>
+
+join(연결문자)					배열객체에 데이터를 연결문자 기준으로 1개의 문자열 데이터로 변환후 반환
+reverse()						배열 객체에 데이터의 순서를 거꾸로 바꾼 후 반환
+sort()							배열 객체에 데이터를 오름차순으로 정렬하여 반환
+slice(index1, index2)			배열 객체에 데이터중 원하는 인덱스 구간 만큼 잘라서 배열 객체로 가져옴
+splice()						배열 객체에 지정된 데이터를 삭제하고,그 구간에 새 데이터를 삽입할수 있음
+concat()						2개의 배열 객체를 하나로 결합시켜 반환
+pop()							배열에 저장된 데이터중 마지막 인덱스 위치에 저장된 데이터를 삭제함.
+push(new data)					배열 객체 마지막 인덱스 위치에 새 데이터를 삽입함.
+shift()							배열 객체의 저장된 데이터중 첫번째 인덱스 위치에 저장된 데이터를 삭제함.
+unshift(new data)				배열 객체의 가장 앞의 인덱스위치에 새로운 데이터를 삽입함.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<날짜>
+
+var t = new Date();
+document.write(  t.getFullYear() + "년 <br>");
+document.write(  t.getHours()  + "시 <br>"  );
+document.write(  t.getMinutes() + "분 <br>");
+document.write(  t.getSeconds() + "초 <br>");
+document.write(  t.getDay() + "요일 <br>");
+document.write(  t.getDate() + "일 <br>");
+document.write(  t.getMonth()+1 + "월 <br>");
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<요소선택>
+
+getElementById
+getElementsByTagName
+children[0]
+
+
+다음요소선택자(nextSibling) - IE8 이하만 가능
+var p = document.getElementsByTagName("p")[1];
+var nextObj = p.nextSibling;	
+while (nextObj.nodeType != 1) {
+nextObj = nextObj.nextSibling;
+}
+
+firstChild - IE8 이하만 가능
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+<숫자 관리>
+
+var maxNum = Math.max(10,5,8,30);	
+//검사할 숫자들중에 가장 작은 값을 판단해서 반환합니다.
+var minNum = Math.min(10,5,8,30);
+//num변수의 값 2.1234에서 소수점 첫째자리를 반올림하여 정수 2를 반환합니다.
+var roundNum = Math.round(num);	
+// 0 ~ 1 사이의 랜덤값(난수)를 발생시켜 반환함
+var rndNum = Math.random();
+//Math.PI는 원주율 상수값을 반환함
+var piNum = Math.PI;
+//변수 num의 값 2.1234의 소수점 첫째 자리값을 무조건 올림 처리하여 정수 3을 반환함.
+var ceilNum = Math.ceil(num);
+참고 : Math.floor(숫자) 는 소수점 첫째짜리에서 무조건 내림해서 정수를 반환합니다.
+Math.floor( Math.random() * (최대값-최소값 + 1)) + 최소값;
+
+
+
+소숫점 둘째 자리 까지 반올림되어 다음과 같이 표기 됩니다.
+3.456789에서 소수점 세째자리에서 반올림하여 3.46 이됨 
+document.write(  num1.toFixed(2)  , "<br>");
+ 		
+유효한 숫자 2개 (3.4)에 반올림 하여 
+3.5를 문자열 형태로 변환해서 되돌려줌
+document.write(  num1.toPrecision(2) , "<br>");
+ 	
+문자열 형태로 변환후 반환함(되돌려줌)
+document.write(  num1.toString(), "<br>"   );
+ 	
+num3변수에 저장된 "30.5px"를   숫자객체의  parseInt()를 사용하여 정수만 남겨 30을 반환하고,
+num4변수의 값 40과 더합니다.
+최종적으로 70을 출력함.
+document.write(  parseInt(num3) + num4 , "<br>");
+    
+저장된 "30.5px"를 실수만 남겨 30.5를 반환하고,
+num4변수의 값 40과 더합니다.
+최종적으로 70.5을 출력함.
+document.write(  parseFloat(num3) + num4 , "<br>");
+    
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+<모니터 정보>
+
+//모니터의 너비 컬러 bit정보를 출력함
+document.write("width : " + screen.width, "<br/>");//1920
+//모니터의 높이 컬러  bit 정보를 출력함
+document.write("height : " + screen.height, "<br/>");
+//모니터의 작업 표시줄을 제외한 너비값 정보를 출력함
+document.write("availWidth : "  + screen.availWidth, "<br/>");
+//모니터의 작업 표시줄을 제외한 높이값 정보를 출력함
+document.write("availHeight : " + screen.availHeight, "<br/>");
+//모니터 표현 가능 컬러 bit를 반환합니다
+document.write("colorDepth : " + screen.colorDepth, "<br/>");
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+<문자 검색>
+
+인덱스 16위치에 저장된 문자를 불러 옵니다. ==> "g"
+document.write( t.charAt(16), "<br/>" );
+
+문자열 객체의 indexOf("찾을 문자") == 문자열 객체의 search("찾을 문자")
+문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 최초로 일치하는 문자의 인덱스 번호를 반환함
+만약 찾는 문자가 없으면 -1 를 반환함.
+변수 t에 참조된 문자열 객체에 인덱스 16부터  오른쪽 방향으로 "you"라는 문자열을 찾습니다.
+이때 최초에 발견된 번지수(인덱스 번호) 29를 반환함.
+document.write(t.indexOf("you", 16), "<br/>");
+
+변수 t에 참조된 문자열 객체에 인덱스 16부터  오른쪽 방향으로 "you"라는 문자열을 찾습니다.
+이때 최초에 발견된 번지수(인덱스 번호) 29를 반환함.
+document.write(t.indexOf("you", 16), "<br/>");
+
+*******문자열 객체의 substring(a,b);
+-> a인덱스 위치부터 b인덱스 위치 이전 구간의 문자열을 잘라내어 반환함
+******문자열 객체의  substr(a, 문자개수)
+-> 문자열에 a인덱스 위치의 값부터 지정한 문자 개수만큼 문자열을 잘라내어 반환함.
+
+***문자열 객체의 replace("바꿀문자","새 문자")
+-> 문자열전체에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 최초로 찾은 문자를 새문자로 치환함.
+
+t에 참조된 문자열에 공백(" ")을 기준으로
+문자열을 "Hello",  "Thank",  "you", "good", "luck", "to", "you" 7개의 문자열로 나눕니다.
+이렇게 나뉜 여러개의 문자열 데이터들은 새로운 배열 메모리에 저장되어 번지수(인덱스번호)가 부여 되고,
+s라는 변수가 배열 객체를 참조하게 됨.
+var s = t.split(" ");
+document.write( s[0] ,"<br/>");
+document.write( s[4] ,"<br/>");
+
+document.write(t.toUpperCase(), "<br/>");
+document.write(t.toLowerCase(), "<br/>");
+document.write( t.length , "<br/>"); //32
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+<함수 , 기능> [ . 다음은 name 값으로 경로정함! ]
+
+
+innerHTML
+
+location.reload(); (F5 새로고침)	
+
+theBtn.onmouseover	= function(){ }  (해당 부분에 마우스 올리고 내릴 때)
+
+document.f2.onsubmit = function(){ } (폼태그 전송시)
+
+if(act.checked == false){ }  (체크박스 on/off 체크여부)
+document.f2.subject1.checked = true;  (체크박스 on/off 체크설정)
+
+theBtn.children[0].src = "images/btn_out.gif"; (img 태그 속 src 선택)
+
+pw1.value; (속성값으로 지정하기)
+
+pw2.disabled = true; (비활성화 시키기)
+
+number() (숫자로 변환하기)
+
+defaultValue속성을 호출하면 <input>태그의 초기에 설정된 값을 기억해 가져 옵니다. ex ) var basic_car = Number(document.getElementById("total").defaultValue); 
+
+history.go(-1) (1단계 이전 페이지)
+history.go(-2) (2단계 이전 페이지)
+history.forward (다음페이지)
+history.back (이전페이지)
+
+tv.off = function(){
+document.write("전원 off<br>");
+}
+tv.off();
+
+setInterval("반복실행할 스크립트 실행문", 시간간격 );
+clearInterval(참조변수명);
+
+이메소드는 일정한 시간간격으로 실행문을 단 한번만 실행시킬떄 사용함
+setTimeout("스크립트 실행문",시간 간격);
+clearTimeout(참조변수명);
+
+window.open("1.url경로","2.창이름","3.옵션설정");
+-> open()메소드의 속성
+width							창의 너비를 설정 함.
+height							창의 높이를 설정 함.
+left							창의 좌 우  수평 위치를 설정 함.
+top								창의 상 하 수직 위치를 설정 함.
+location						창의 url주소 입력 영역 노출 여부를 결정함(숨김:no, 노출:yes)
+status							창의 상태영역 노출 여부를 결정함(숨김:no, 노출:yes)
+scrollbars						창의 스크롤 막대 노출 여부를 결정함(숨김:no, 노출:yes)
+toolbars						창의 도구 상자 노출여부를 결정함(숨김:no, 노출:yes)
+	
+window객체의 close()메소드 
+-> 웹브라우저 창을 자동으로 닫을때 호출 하는 메소드 
