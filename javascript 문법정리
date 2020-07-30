@@ -229,3 +229,34 @@ toolbars						창의 도구 상자 노출여부를 결정함(숨김:no, 노출:y
 	
 window객체의 close()메소드 
 -> 웹브라우저 창을 자동으로 닫을때 호출 하는 메소드 
+
+function 함수이름 ( ) { } -- 함수 만들기 , 실행 : 함수이름 ()
+var a = function ( ) { } -- 함수 만들기 , 실행 : 2  a ()
+
+var a = prompt(a,b) 변수에 저장 가능!
+
+a(   a(); )  -- 재귀함수
+
+document.getElementById("btn4").onmouseout = function(){
+colorBg();//함수 호출 하여 배경색상이 변경되게 하기 }                 --- 설정 지정 후 이벤트 발생시 함수 생성동작
+
+<button onmouseover="colorBg();">버튼3</button>  -- 버튼에 이벤트 설정하기!
+
+var result = confirm("정말로 회원가입을 취소 하시겠습니까?"); -- 확인 취소 물음창
+
+<form action="a.jsp" 
+name="f1"
+onsubmit="return submit_chk(this);"               --- 폼태그에서 함수 설정하기
+onreset="return reset_chk(this);">
+
+window.onload = function(){
+//파이어폭스, 크롬등 브라우저에서 true를 반환하여 조건식을 만족함
+if(window.addEventListener){
+//<button id="btn">인 요소를 클릭할때 마다 함수 fnc1을 호출하게 하기 
+myBtn.addEventListener("click", fnc1, false);
+/<button id="btn">인 요소를 클릭 할떄 마다 함수 fnc2을 호출하게 하기 
+myBtn.addEventListener("click", fnc2, false);
+}else{// IE 8이하 라면
+myBtn.attachEvent("onclick", fnc1);
+myBtn.attachEvent("onclick", fnc2);
+
