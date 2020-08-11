@@ -71,8 +71,95 @@ $("tr:last").css("font-style","italic");
 ------------------선택자------------------------------------------
 
 
+$("form").submit(function(event){
+//실제 submit하는 동작을 방지 ~!
+event.preventDefault();
+});
+
+//<input>태그 중에서 type속성의 값이 button이거나
+//<button>태그를 선택해서 가져와서
+$(":button").css("border","3px red solid");
+
+//type속성값이 text인 활성화된 요소를 선택해서 가져와서
+//disabled속성을 추가한다.
+$("input[type='text']:enabled").attr("disabled","disabled");
+
+//input태그중에서 type속성값이 text인 태그를 선택해서 가져와서
+//그중에서 비활성화된 <input>요소만? 최종 선택해서 가져와서
+//disabled속성값을 제거하고 
+$("input[type='text']:disabled").removeAttr("disabled");
+
+//<button id="disable">disable</button>요소를 선택해서 클릭했을때
+$("form").submit(function(event){
+//실제 submit하는 동작을 방지 ~!
+event.preventDefault();
+});
+
+//<input>태그의 type속성값이 text인 요소를 선택하여 가져와서 
+/그요소에  <input>태그중 type속성값이 checkbox이면서 check된 요소의 value값을 
+//가져와 설정함
+$("input:text").val( $("input:checked").val() );
 
 
+$("input:checkbox")
+.wrap("<span></span>")	
+.parent()
+.css("border","3px dotted red");
+
+$(function(){
+ //<select>태그를 선택해서 가져와서
+//이후 <select>태그의 하위 항목인 <option>태그를 선택하면
+ //(다른옵션을 선택하여 변화가 일어나면?)
+ $("select").change(function(){				 
+//선택된 <option>태그의 텍스트값을 얻어 data변수에 저장
+ var data = $(":selected").text();
+//data변수에 저장된 값을 <span>태그영역에 텍스트값으로 설정 하여 출력
+ $("span").text(data);
+ });
+ });
+
+<form>태그 관련 필터 선택자중.. 
+ 내용필터 선택자 : 특정요소의 텍스트내용과 일치하는 요소 또는 일치하지 않는 요소를 찾아서 선택
+ :contains(text)  ->  지정된 text와 일치하는 문자열이 존재하는 요소를 반환함. 대소문자 구별함
+ :empty  ->  자식요소가 존재하지 않고  텍스트내용이 비어 있는 요소를 반환함.
+ :has(selector) -> 지정된 selector가  자식요소로 존재하는 모든 요소를 반환함.
+ :parent    -> 자식요소가 존재하거나 , 텍스트값을 가지고 있는 요소를 반환함.
+
+$(function() {
+//<div>태그 내에 자식 태그로 <p>태그를 포함하는 모든 태그를 선택하여 
+$("div:has(p)").css("background-color","green");
+});
+
+
+$("button").on("click", function(){
+//<img>태그를 선택해서 가져와서 src속성값을 "korea.png"문자열로 설정하고,
+//width와 height속성을 각각 200으로 설정 함.
+$("img").attr( {src:"korea.png", width:200, height:200}  );	
+
+//첫번째 <p>태그에  class속성 값 highlight를 추가로 설정 한다.
+//<p>태그에 기존의 calss속성값인 size가 있기때문에
+//class속성값 highlight는  기존 size속성값뒤에 추가 된다.
+$("p:first").addClass("highlight");
+//마지막 <p>태그에 기존의 class속성값인 size뒤에 
+//selected 와 highlight class속성값을 추가 한다.
+$("p:last").addClass("selected highlight");
+
+//첫번째 <p>태그를 선택해  class속성값인? highlight를 제거 한다.
+//따라서 <p>태그의 class속성값은 size만 남아 적용 된다.
+$("p:first").removeClass("highlight");
+				
+//마지막 <p>태그를 선택해 
+//class속성값인? selected와  highlight를 제거함.
+$("p:last").removeClass("selected highlight");	
+
+$(function(){
+//모든 <p>태그를 선택해서 가져와서  click이벤트 등록
+$("p").on("click",function(){
+//click이벤트가 발생하는 <p>요소를 선택해서 가져와서 
+//class속성값을 토글 시킨다.	
+//따라서 번갈아 배경색이 yello로 설정되었다가 해제 된다.
+$(this).toggleClass("highlight");
+});
 
 
 
