@@ -257,13 +257,15 @@
 
 ## Dependency Injection 이란?
 
+<br><br>
+
 **객체 자체가 아니라 Framework에 의해 객체의 의존성이 주입되는 설계 패턴**
 
 <br>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962116-eeadde80-0e40-11eb-9e40-fe92eeee4c07.png" width="600px"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95982681-5bce6d80-0e5b-11eb-8aaa-1c304af96423.png" width="600px"> </p>
 
-<br>
+<br><br>
 
 ## 의존성 주입 방법
 
@@ -276,7 +278,8 @@
  * Field Injection
    * 멤버 변수를 통한 전달
    
-   
+<br><br>
+
 ## 의존성 주입의 장점
 
 * 재사용성을 높여줍니다. <br> 
@@ -288,6 +291,8 @@
 * 결합도(coupling)는 낮추면서 유연성과 확장성은 향상시킬 수 있습니다. <br> 
 * 객체간의 의존관계를 설정할 수 있습니다. <br>
 * 객체간의 의존관계를 없애거나 줄일 수 있습니다. <br>
+
+<br><br>
 
 ## 예시
 
