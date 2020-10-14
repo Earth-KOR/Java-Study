@@ -2,9 +2,9 @@
 
 <br>
 
-`RE`presentational 표현 <br><br>
-`S`tate 상태 <br><br>
-`T`ransfer 전달
+**`RE`presentational 표현** <br><br>
+**`S`tate 상태** <br><br>
+**`T`ransfer 전달**
 
 <br>
 
@@ -117,8 +117,8 @@
 
 <br>
 
-**`A`synchronous 비동기** <br><br>
-⁠**`J`avaScript** <br><br>
+**`A`synchronous 비동기** <br><br> 
+**`J`avaScript** <br><br>
 **`A`nd** <br><br>
 **`X`ml**
 
