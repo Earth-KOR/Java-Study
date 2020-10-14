@@ -2,9 +2,9 @@
 
 <br>
 
-* REpresentational 표현
-* State 상태
-* Transfer 전달
+`RE`presentational 표현 <br><br>
+`S`tate 상태 <br><br>
+`T`ransfer 전달
 
 <br>
 
