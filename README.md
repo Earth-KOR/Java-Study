@@ -117,10 +117,10 @@
 
 <br>
 
-`A`synchronous 비동기 <br><br>
-⁠`J`avaScript <br><br>
-`A`nd <br><br>
-`X`ml
+**`A`synchronous 비동기** <br><br>
+⁠**`J`avaScript** <br><br>
+**`A`nd** <br><br>
+**`X`ml**
 
 <br>
 
@@ -196,10 +196,10 @@
 
 ## 비동기 방식의 종류
 
- * $(" ").load( )
- * $.get( ),$.post( )
- * $.getJSON( )
- * $.ajax( )
+ * **$(" ").load( )**
+ * **$.get( ),$.post( )**
+ * **$.getJSON( )**
+ * **$.ajax( )**
  
  <br>
  
