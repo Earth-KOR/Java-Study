@@ -2,7 +2,9 @@
 
 <br>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95961095-90ccc700-0e3f-11eb-8691-98b94a6452f8.png" width="600px"> </p>
+* REpresentational 표현
+* State 상태
+* Transfer 전달
 
 <br>
 
