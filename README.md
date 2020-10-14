@@ -113,4 +113,134 @@
 
 
 
+# AJAX
+
+<br>
+
+`A`synchronous 비동기 <br><br>
+⁠`J`avaScript <br><br>
+`A`nd <br><br>
+`X`ml
+
+<br>
+
+<hr>
+
+<br>
+
+## 초창기 웹?
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962124-efdf0b80-0e40-11eb-9aa8-be93a96b077b.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
+
+## Ajax의 장점 - 1
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962129-f077a200-0e40-11eb-918c-7f60936d888d.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
+
+
+## Ajax의 장점 - 2
+
+**비동기 방식으로 페이지를 새로고침 하지 않고도 필요한 데이터를 받아와서 내용을 업데이트 하기 때문에 클라이언트의 대기시간을 줄일 수 있다.
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962130-f1103880-0e40-11eb-92d4-4293d0195a00.png" width="600px"> </p>
+
+
+### 동기/비동기 방식의 차이점
+
+ * 동기(synchronous : 동시에 일어나는)
+   * 동기는 말 그대로 동시에 일어난다는 뜻입니다. 요청과 그 결과가 동시에 일어난다는 약속인데요. 바로 요청을 하면 시간이 얼마가 걸리던지 요청한 자리에서 결과가 주어져야 합니다. <br><br>
+   * 요청과 결과가 한 자리에서 동시에 일어남 <br><br>
+   * A노드와 B노드 사이의 작업 처리 단위(transaction)를 동시에 맞추겠다.
+ * 비동기(Asynchronous : 동시에 일어나지 않는)
+   * 비동기는 동시에 일어나지 않는다를 의미합니다. 요청과 결과가 동시에 일어나지 않을거라는 약속입니다. <br><br>
+   * 요청한 그 자리에서 결과가 주어지지 않음 <br><br>
+   * 노드 사이의 작업 처리 단위를 동시에 맞추지 않아도 된다.
+   
+### 동기/비동기 방식의 장단점
+
+ **동기와 비동기는 상황에 따라서 각각의 장단점이 있습니다.**  <br><br>
+
+ **동기방식은 설계가 매우 간단하고 직관적이지만 결과가 주어질 때까지 아무것도 못하고 대기해야 하는 단점이 있고,**  <br><br>
+
+ **비동기방식은 동기보다 복잡하지만 결과가 주어지는데 시간이 걸리더라도 그 시간 동안 다른 작업을 할 수 있으므로 자원을 효율적으로 사용할 수 있는 장점이 있습니다.**
+
+
+
+<br>
+
+<hr>
+
+<br>
+
+## 비동기 방식의 종류
+
+ * $(" ").load( )
+ * $.get( ),$.post( )
+ * $.getJSON( )
+ * $.ajax( )
+ 
+### 비동기 방식의 종류 - $(" ").load( )
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962119-ef467500-0e40-11eb-8305-f1fb54d35871.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
+
+### 비동기 방식의 종류 - $.get( ),$.post( )
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962111-ece41b00-0e40-11eb-9905-5fa594ad517a.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
+
+### 비동기 방식의 종류 - $.getJSON( )
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962114-eeadde80-0e40-11eb-9cd2-26a7cc660dd6.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
+
+### 비동기 방식의 종류 - $.ajax( )
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95962116-eeadde80-0e40-11eb-9e40-fe92eeee4c07.png" width="600px"> </p>
+
+<br>
+
+<hr>
+
+<br>
 
