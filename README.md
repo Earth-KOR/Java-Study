@@ -255,9 +255,9 @@
 
 # 의존성 주입 (DI)
 
-## Dependency Injection 이란?
-
 <br><br>
+
+## Dependency Injection 이란?
 
 **객체 자체가 아니라 Framework에 의해 객체의 의존성이 주입되는 설계 패턴**
 
