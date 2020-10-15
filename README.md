@@ -321,6 +321,82 @@
 
 # 공공데이터 값 가져오기
 
+## 태그 안의 태그 및 태그 내부의 값 가져오기
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097411-deaf0100-0f0b-11eb-9ac5-b9f710c463b7.png" width="600px"> </p>
+
+<br>
+
+**다음과 같은 tag안의 tag 값을 가져오는 방법과 tag 내부에 있는 값을 가져오는걸 배워보겠습니다!**
+<br>
+<hr>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097413-df479780-0f0b-11eb-87ea-8386354c8c7f.png" width="600px"> </p>
+
+<br>
+
+**DocumentURL 변수에 데이터를 가져올 주소를 넣어주고 태그에 접근하기 위한 xpath를 생성하고 특정 태그의 값을 담을 변수를 선언해줍니다!**
+
+<br>
+<hr>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097398-dc4ca700-0f0b-11eb-8fc0-7d7f80f12888.png" width="600px"> </p>
+
+<br>
+
+**URL 변수에 원하는 데이터만 가져오기 위해 파라미터를 추가한 URL 값을 넣습니다** <br><br>
+
+**그 후 앞서 사용한 Document 변수안에 현재 페이지의 데이터를 담습니다.** <br><br>
+
+**evaluate 매서드에 원하는 태그까지 접근함으로써 원하는 데이터를 nodeList안에 리스트 형태로 저장합니다**
+
+<br>
+<hr>
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097402-dd7dd400-0f0b-11eb-8c35-c5556446e8f9.png" width="600px"> </p>
+
+<br>
+
+**가져온 데이터 중에서 SECTION 태그의 갯수를 파악하여 그 수만큼 반복문을 돌리고 가져온 값은 result 변수에 추가시킵니다. **
+
+<br>
+
+<hr>
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097405-dd7dd400-0f0b-11eb-9743-9ed850c3ab77.png" width="600px"> </p>
+
+<br>
+
+**가져온 데이터 중에서 ARTICLE 태그의 갯수를 파악하여 그 수만큼 반복문을 돌리고 가져온 값은 result 변수에 추가시킵니다. **
+
+<hr>
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097408-de166a80-0f0b-11eb-9c5b-22780425fed7.png" width="600px"> </p>
+
+<br>
+
+**가져온 데이터 중에서 PARAGRAPH 태그의 갯수를 파악하여 그 수만큼 반복문을 돌리고 가져온 값은 result 변수에 추가시킵니다. **
+
+
+<hr>
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96097409-deaf0100-0f0b-11eb-9008-3a32920d6576.png" width="600px"> </p>
+
+<br>
+
+**모든 데이터를 가지고있는 result값을 DB에 저장하여 데이터를 사용합니다! **
+
+
+
+
+
 ## 태그 안 Value 값 가져오기
 
 <br>
@@ -382,7 +458,7 @@
 
 **List안에 들어있는 데이터를 DB안에 저장해서 사용함 !**
 
-
+<br><br><hr>
 
 
 
