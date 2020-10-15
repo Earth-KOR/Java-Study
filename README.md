@@ -319,3 +319,71 @@
 출처 : https://gmlwjd9405.github.io/2018/11/09/dependency-injection.html
 
 
+# 공공데이터 값 가져오기
+
+## 태그 안 Value 값 가져오기
+
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96095045-0fda0200-0f09-11eb-9912-2c9dc29a6f37.png" width="600px"> </p>
+
+<br>
+
+**다음과 같은 tag안의 데이터들 중에서 가지고오고 싶은 데이터만 파싱하는 방법을 알아보겠습니다.**
+<br>
+<hr>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96095046-0fda0200-0f09-11eb-8fab-e67a9ff173f8.png" width="600px"> </p>
+
+<br>
+
+**url 변수에 데이터를 가져올 주소와 파라미터 값을 넣어주고 DocumentBuilderFactory , DocumentBuilder, Document 를 이용하여 전체 페이지를 파싱한 데이터를 담는다.**
+
+<br>
+<hr>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96095049-10729880-0f09-11eb-9387-f552486d3434.png" width="600px"> </p>
+
+<br>
+
+**root 태그로 접근한 다음, 파싱을 시작 할 시작태그의 변수를 넣어 가져올 데이터의 범위를 좁혀준다!** <br><br>
+
+**좁혀진 데이터들을 Nodelist 변수에 list 형태로 담은 후, Nodelist가 가지고 있는 모든 데이터를 for 반복문과 item 메서드를 이용하여 list 안의 각각의 데이터를 Node 변수에 모두 담아준다.** <br><br>
+
+**getNodeType() 메서드에 가지고 오고 싶은 태그이름을 매개변수에 넣음으로써 해당 태그안의 데이터를 가지고 올 수 있음!**
+
+<br>
+<br>
+
+<p align="center"> <img src="(https://user-images.githubusercontent.com/62025746/96095042-0ea8d500-0f09-11eb-8ffa-2b806c2085bd.png" width="600px"> </p>
+
+<br>
+<hr>
+
+<br>
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96095054-110b2f00-0f09-11eb-9a66-dd7877e58155.png" width="600px"> </p>
+
+<br>
+
+**getNodeType으로 가져온 데이터를 List 변수에 저장함.**
+
+<br>
+
+<hr>
+
+<br>
+<br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96095057-110b2f00-0f09-11eb-90c6-42998052f599.png" width="600px"> </p>
+
+<br>
+
+**List안에 들어있는 데이터를 DB안에 저장해서 사용함 !**
+
+
+
+
+
+
