@@ -470,62 +470,36 @@
 **JavaScript를 이용하여 그래프를 그릴 수 있게 도와주는 플러그인 (Chart.js는 canvas로 그리는 형식)**
 
 <br>
+<hr>
 
 ## Chart.js 사용방법
 
-<br><br>
+<br>
+<br>
 
-## 의존성 주입 방법
-
- * Contructor Injection
-   * 생성자를 통한 전달
-   * `<constructor-arg ref="cat"></constructor-arg>`
- * Method(Setter) Injection
-   * setter()을 통한 전달
-   * `<property name="myName" value="poodle"></property>`
- * Field Injection
-   * 멤버 변수를 통한 전달
-   
-<br><br>
-
-## 의존성 주입의 장점
-
-* 재사용성을 높여줍니다. <br> 
-* 테스트에 용이합니다. <br>
-* 코드도 단순화 시켜줍니다. <br>
-* 종속적이던 코드의 수도 줄여줍니다. <br>
-* 왜 사용하는 지 파악하기가 수월합니다. 코드를 읽기 쉬워지는 점이 있습니다. <br> 
-* 종속성이 감소합니다. 구성 요소의 종속성이 감소하면, 변경에 민감하지 않습니다. <br>
-* 결합도(coupling)는 낮추면서 유연성과 확장성은 향상시킬 수 있습니다. <br> 
-* 객체간의 의존관계를 설정할 수 있습니다. <br>
-* 객체간의 의존관계를 없애거나 줄일 수 있습니다. <br>
-
-<br><br>
-
-## 예시
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96148830-9f040b80-0f43-11eb-96a0-6f11fc3384e1.png" width="600px"> </p>
 
 <br>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/95982506-26c21b00-0e5b-11eb-894f-b5a31d5db2b4.png" width="600px"> </p>
+**위와 같이 body 태그 영역안에 chart를 선언 해줌으로써 그래프를 나타나게 한다!**
+
+<br><br>
+
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96148835-a0353880-0f43-11eb-91f1-28e5f4ac2ae7.png" width="600px"> </p>
 
 <br>
 
-1. AnimalType에 대한 구체적인 Class를 생성한다. <br>
-  - Dog Class, Cat Class <br><br>
-2. PetOwner 객체에 AnimalType 객체를 전달한다. <br>
-  - Contructor Injection <br><br>
-3. 생성자를 통한 전달 <br>
-  - `<constructor-arg ref="cat"></constructor-arg>` <br><br>
-4. Method(Setter) Injection <br>
-  - setter()을 통한 전달 <br>
-  - `<property name="myName" value="poodle"></property> `<br><br>
-5. Field Injection <br>
-  - 멤버 변수를 통한 전달 <br>
+**chart.js의 기본 옵션으로 만드려고 하는 그래프의 여러 설정값을 지정 할 수 있음** <br>
 
-개발자가 할 일은 주입할 것에 대한 Class를 작성(Dog, Cat 등)하는 것 ! <br>
+**type에서 line 형의 그래프 말고도 수 많은 다른 형태의 그래프를 그릴 수 있음!**
 
-출처 : https://gmlwjd9405.github.io/2018/11/09/dependency-injection.html
+<br>
+<hr>
 
+<br><br>
 
+<p align="center"> <img src="https://user-images.githubusercontent.com/62025746/96148833-a0353880-0f43-11eb-965f-2b69b362c91c.png" width="600px"> </p>
 
+<br>
 
+**한번에 그려지는 그래프가 아닌, 시간에 따라 변화하는 그래프를 그리고 싶다면 setTimeOut 메서드를 이용해서 조절 할 수가 있음**
