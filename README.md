@@ -2,7 +2,7 @@
 
 <br>
 
-**`RE`presentational 표현** <br><br>
+**`RE`presentational 표현**   <br><br>
 **`S`tate 상태** <br><br>
 **`T`ransfer 전달**
 
@@ -523,4 +523,4 @@
 
 <br>
 
-**한번에 그려지는 그래프가 아닌, 시간에 따라 변화하는 그래프를 그리고 싶다면 setTimeOut 메서드를 이용해서 조절 할 수가 있음**
+**한번에 그려지는 그래프가 아닌, 시간에 따라 변화하는 그래프를 그리고 싶다면 setTimeOut 메서드를 이용해서 시간을 조절 할 수가 있음**
