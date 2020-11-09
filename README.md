@@ -2,7 +2,7 @@
 
 <br>
 
-**`RE`presentational 표현**   <br><br>
+**`RE`presentational 표현**   <br>
 **`S`tate 상태** <br><br>
 **`T`ransfer 전달**
 
