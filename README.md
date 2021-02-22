@@ -67,7 +67,7 @@
 
 <hr>
 
-**REST에는 GET 뿐만 아니라 다양한 명령어가 존재하고, REST Client 라는 구글앱을 사용하여 보다 편리하게 REST를 Request 할 수 있다!**
+**REST에는 GET 뿐만 아니라 다양한 명령 어가 존재하고, REST Client 라는 구글앱을 사용하여 보다 편리하게 REST를 Request 할 수 있다!**
 
 <br>
 
